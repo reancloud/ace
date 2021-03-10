@@ -163,3 +163,5 @@ Ace is a community project and wouldn't be what it is without contributions! We 
 
 Feel free to fork and improve/enhance Ace any way you want. If you feel that the editor or the Ace community will benefit from your changes, please open a pull request. For more information on our contributing guidelines, see [CONTRIBUTING.md](https://github.com/ajaxorg/ace/blob/master/CONTRIBUTING.md).
 
+Changes made for HCL
+
