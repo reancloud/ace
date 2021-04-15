@@ -1,0 +1,241 @@
+# terraform functions
+snippet abs
+	abs(${1})
+snippet max
+	max(${1}, ${2})
+snippet ceil
+	ceil(${1})
+snippet floor
+	floor(${1})
+snippet log
+	log(${1}, ${2})
+snippet min
+	min(${1}, ${2})
+snippet parseint
+	parseint("${1}", ${2})
+snippet pow
+	pow(${1}, ${2})
+snippet signum
+	signum(${1})
+snippet chomp
+	chomp("${1}")
+snippet format
+	format("${1}", ${2})
+snippet formatlist
+	formatlist("${1}", ${2})
+snippet indent
+	indent(${1}, ${2})
+snippet join
+	join("${1}", [${2}])
+snippet lower
+	lower("${1}")
+snippet regex
+	regex("${1}", "${2}")
+snippet regexall
+	regexall("${1}", "${2}")
+snippet replace
+	replace("${1}", "${2}", "${3}")
+snippet split
+	split("${1}", "${2}")
+snippet strrev
+	strrev("${1}")
+snippet substr
+	substr("${1}", ${2}, ${3})
+snippet title
+	title("${1}")
+snippet trim
+	trim("${1}", "${2}")
+snippet trimprefix
+	trimprefix("${1}", "${2}")
+snippet trimsuffix
+	trimsuffix("${1}", "${2}")
+snippet trimspace
+	trimspace("${1}")
+snippet upper
+	upper("${1}")
+snippet alltrue
+	alltrue([${1}])
+snippet anytrue
+	anytrue([${1}])
+snippet chunklist
+	chunklist([${1}], ${2})
+snippet coalesce
+	coalesce(${1}, ${2})
+ snippet coalescelist
+	coalescelist([${1}],[${2}])
+snippet compact
+	compact([${1}])
+snippet concat
+	concat([${1}], [${2}])
+snippet contains
+	contains([${1}], ${2})
+snippet distinct
+	distinct([${1}])
+snippet element
+	element([${1}], ${2})
+snippet flatten
+	flatten([${1}])
+snippet index
+	index([${1}], ${2})
+snippet keys
+	keys({${1}})
+snippet length
+	length([${1}])
+snippet list
+	list(${1})
+snippet lookup
+	lookup({${1}}, "${2}", "${3}")
+snippet map
+	map(${1}, ${2})
+snippet matchkeys
+	matchkeys([${1}], [${2}], [${3}])
+snippet merge
+	merge({${1}}, {${2}})
+snippet range
+	range(${1}, ${2}, ${3})
+snippet reverse
+	reverse([${1}])
+snippet setintersection
+	setintersection([${1}], [${2}])
+snippet setproduct
+	setproduct([${1}], [${2}])
+snippet setsubtract
+	setsubtract([${1}], [${2}])
+snippet setunion
+	setunion([${1}], [${2}])
+snippet slice
+	slice([${1}], ${2}, ${3})
+snippet sort
+	sort([${1}])
+snippet sum
+	sum([${1}])
+snippet transpose
+	transpose({"${1}" = [${2}]})
+snippet values
+	values({${1}})
+snippet zipmap
+	zipmap([${1}], [${2}])
+snippet base64decode
+	base64decode("${1}")
+snippet base64encode
+	base64encode("${1}")
+snippet base64gzip
+	base64gzip("${1}")
+snippet csvdecode
+	csvdecode("${1}")
+snippet jsondecode
+	jsondecode("${1}")
+snippet jsonencode
+	jsonencode("${1}")
+snippet textdecodebase64
+	textdecodebase64("${1}", "${2}")
+snippet textencodebase64
+	textencodebase64("${1}", "${2}")
+snippet urlencode
+	urlencode("${1}")
+snippet yamldecode
+	yamldecode("${1}")
+snippet yamlencode
+	yamlencode("${1}")
+snippet abspath
+	abspath("${1}")
+snippet dirname
+	dirname("${1}")
+snippet pathexpand
+	pathexpand("${1}")
+snippet basename
+	basename("${1}")
+snippet file
+	file("${1}")
+snippet fileexists
+	fileexists("${1}")
+snippet fileset
+	fileset("${1}", "${2}")
+snippet filebase64
+	filebase64("${1}")
+snippet templatefile
+	templatefile("${1}")
+snippet formatdate
+	formatdate("${1}", "${2}")
+snippet timeadd
+	timeadd("${1}", "${2}")
+snippet timestamp
+	timestamp()
+snippet base64sha256
+	base64sha256("${1}")
+snippet base64sha512
+	base64sha512("${1}")
+snippet bcrypt
+	bcrypt("${1}")
+snippet filebase64sha256
+	filebase64sha256("${1}")
+snippet filebase64sha512
+	filebase64sha512("${1}")
+snippet filemd5
+	filemd5("${1}")
+snippet filesha1
+	filesha1("${1}")
+snippet filesha256
+	filesha256("${1}")
+snippet md5
+	md5("${1}")
+snippet rsadecrypt
+	rsadecrypt("${1}")
+snippet sha1
+	sha1("${1}")
+snippet sha256
+	sha256("${1}")
+snippet sha512
+	sha512("${1}")
+snippet uuid
+	uuid()
+snippet uuidv5
+	uuidv5("${1}", "${2}")
+snippet cidrhost
+	cidrhost("${1}", ${2})
+snippet cidrnetmask
+	cidrnetmask("${1}")
+snippet cidrsubnet
+	cidrsubnet("${1}", ${2}, ${3})
+snippet cidrsubnets
+	cidrsubnets("${1}", ${2})
+snippet can
+	can(${1})
+snippet defaults
+	defaults(${1}, ${2})
+snippet tobool
+	tobool(${1})
+snippet tolist
+	tolist([${1}])
+snippet tomap
+	tomap({${1}})
+snippet tonumber
+	tonumber(${1})
+snippet toset
+	toset([${1}])
+snippet tostring
+	tostring(${1})
+snippet try
+	try(${1}, ${2})
+
+# heredoc
+snippet <<EOT
+	<<EOT
+	${1}
+	EOT
+# count
+snippet count
+	count =
+snippet for
+	for ${1} in ${2} : ${3}
+snippet dynamic
+	dynamic "${1}" {
+		${2}
+	}
+snippet provisioner
+	provisioner "${1}" {
+		${2}
+	}
+
+
+
